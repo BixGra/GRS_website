@@ -14,6 +14,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
+  <script src="js/ranking.js"></script>
   <style>
     .menu-results {
       color: rgb(255, 255, 255) !important;
@@ -23,7 +24,7 @@
   </style>
 </head>
 
-<body>
+<body onLoad="onLoadResults()">
   <div class="menu-container"></div>
   <div class="content-container">
     <!-------------------------------------------------------------------------------------------->
@@ -50,32 +51,62 @@
     <div class="content">
       <div class="content-table flex-column">
         <!-------------------------------------------------------------------------------------------->
-        <!--Start Text around Image-->
+        <!--Start Text with Centered Image and Table-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="text-around-image-1">Gamer's Assembly in Poitier, France - 30/03 to 01/04/2024</h2>
+            <h2 id="latest-tournaments">Latest tournaments</h2>
             <hr>
             <p class="text">
-              <a href="https://github.com/yenchiah/project-website-template" target="_blank" >
-                <img class="image image-wrap-text max-width-400" src="img/dummay-img.png">
-              </a>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-              dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-              amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-              aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea
-              voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
-              pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-              deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
-              similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-              rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-              impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis.
+              Select a tournament in the list to display the tournament's results.
             </p>
+            <div class="custom-table-container center add-top-margin-small">
+              <table id="tournament-table" class="custom-table">
+                <thead>
+                  <tr id="tournaments-header" class="bg-color-gray">
+                    <th class="text-center">Tournament</th>
+                    <th class="text-center">Date</th>
+                  </tr>
+                </thead>
+                <tbody id="tournaments-body">
+                </tbody>
+              </table>
+              <div class="flex-row-space-between">
+                <button id="previous-tournaments">Previous Page</button>
+                <button id="next-tournaments">Next Page</button>
+              </div>
+            </div>
           </div>
         </div>
-        <!--End Text around Image-->
+        <!--End Text with Centered Image and Table-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text with Centered Image and Table-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2>Latest Results - <span id="tournament-result"></span></h2>
+            <hr>
+            <p class="text">
+              Find all the results you need
+            </p>
+            <div class="custom-table-container center add-top-margin-small">
+              <table id="results-table" class="custom-table">
+                <thead>
+                  <tr id="results-header" class="bg-color-gray">
+                    <th>Rank</th>
+                    <th class="text-center">Player</th>
+                    <th class="text-center">Points</th>
+                  </tr>
+                </thead>
+                <tbody id="results-body">
+                </tbody>
+              </table>
+              <div class="flex-row-space-between">
+                <button id="previous-results">Previous Page</button>
+                <button id="next-results">Next Page</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Text with Centered Image and Table-->
         <!-------------------------------------------------------------------------------------------->
       </div>
     </div>

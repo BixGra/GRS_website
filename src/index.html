@@ -14,6 +14,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/menu.js"></script>
   <script src="js/footer.js"></script>
+  <script src="js/ranking.js"></script>
   <style>
     .menu-index {
       color: rgb(255, 255, 255) !important;
@@ -23,7 +24,7 @@
   </style>
 </head>
 
-<body>
+<body onLoad="onLoadIndex()">
   <div class="menu-container"></div>
   <div class="content-container">
     <!-------------------------------------------------------------------------------------------->
@@ -138,7 +139,7 @@
             <h2 class="add-top-margin-small">GRS Ranking</h2>
             <p class="text">
               All along the year, the world's strongest players fight at the top of the ranking. In december, the
-              best ranked players are invited to the <a href="all_star.html">GRS All-Star event</a> where they compete
+              best ranked players are invited to the <a href="all-star.html">GRS All-Star event</a> where they compete
               against each other for a prestigious title.
             </p>
           </div>
@@ -162,7 +163,7 @@
             <div class="custom-table-container center add-top-margin-small">
               <table class="custom-table">
                 <thead>
-                  <tr class="bg-color-gray">
+                  <tr id="ranking-header" class="bg-color-gray">
                     <th>Rank</th>
                     <th class="text-center">Nickname</th>
                     <th class="text-center">Country</th>
@@ -170,86 +171,13 @@
                     <th class="text-center">Points</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr class="bg-color-light-gray">
-                    <td>1</td>
-                    <td class="text-center">Otaaaq</td>
-                    <td class="text-center">France</td>
-                    <td class="text-center">Karmine Corp</td>
-                    <td class="text-center">2853</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>2</td>
-                    <td class="text-center">CarlJr</td>
-                    <td class="text-center">Canada</td>
-                    <td class="text-center">Solary</td>
-                    <td class="text-center">2512</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>3</td>
-                    <td class="text-center">Pac</td>
-                    <td class="text-center">United Kingdom</td>
-                    <td class="text-center">-</td>
-                    <td class="text-center">2506</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>4</td>
-                    <td class="text-center">Affi</td>
-                    <td class="text-center">Switzerland</td>
-                    <td class="text-center">Into the Breach</td>
-                    <td class="text-center">2193</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>5</td>
-                    <td class="text-center">Mudda</td>
-                    <td class="text-center">Australia</td>
-                    <td class="text-center">Alliance</td>
-                    <td class="text-center">1985</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>6</td>
-                    <td class="text-center">Granady</td>
-                    <td class="text-center">Germany</td>
-                    <td class="text-center">BIG</td>
-                    <td class="text-center">1502</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>7</td>
-                    <td class="text-center">Binkss</td>
-                    <td class="text-center">France</td>
-                    <td class="text-center">Gamers First</td>
-                    <td class="text-center">1323</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>8</td>
-                    <td class="text-center">Massa</td>
-                    <td class="text-center">Germany</td>
-                    <td class="text-center">BIG</td>
-                    <td class="text-center">1129</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>9</td>
-                    <td class="text-center">Wosile</td>
-                    <td class="text-center">France</td>
-                    <td class="text-center">Alternate ATTAX</td>
-                    <td class="text-center">1024</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>10</td>
-                    <td class="text-center">Mime</td>
-                    <td class="text-center">Poland</td>
-                    <td class="text-center">Into the Breach</td>
-                    <td class="text-center">912</td>
-                  </tr>
-                  <tr class="bg-color-light-gray">
-                    <td>...</td>
-                    <td class="text-center">...</td>
-                    <td class="text-center">...</td>
-                    <td class="text-center">...</td>
-                    <td class="text-center">...</td>
-                  </tr>
+                <tbody id="ranking-body">
                 </tbody>
               </table>
+              <div class="flex-row-space-between">
+                <button id="previous">Previous Page</button>
+                <button id="next">Next Page</button>
+              </div>
             </div>
           </div>
         </div>
@@ -276,7 +204,7 @@
         <!--Start Text around Image-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="text-around-image-4">Maxlan in Nancy, France - 24/02/2024</h2>
+            <h2 id="latest-results-1">Maxlan in Nancy, France - 24/02/2024</h2>
             <hr>
             <p class="text">
               <a href="https://github.com/yenchiah/project-website-template" target="_blank" >
@@ -303,7 +231,7 @@
         <!--Start Text around Image-->
         <div class="flex-row">
           <div class="flex-item flex-column">
-            <h2 id="text-around-image-5">Insalan in Rennes, France - 17/02 to 18/02/2024</h2>
+            <h2 id="latest-results-2">Insalan in Rennes, France - 17/02 to 18/02/2024</h2>
             <hr>
             <p class="text">
               <a href="https://github.com/yenchiah/project-website-template" target="_blank" >

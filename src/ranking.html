@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Global Racing Series - Ranking</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/ranking.js"></script>
+  <style>
+    .menu-ranking {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+</head>
+
+<body onLoad="onLoadRanking()">
+  <div class="menu-container"></div>
+  <div class="content-container">
+    <!-------------------------------------------------------------------------------------------->
+    <!--Start Header-->
+    <div class="banner" style="background: url('img/dummy-background.jpeg') no-repeat center; background-size: cover; height: 300px;"></div>
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin-small">Current GRS Ranking</h2>
+            <p class="text">
+              All along the year, the world's strongest players fight at the top of the ranking. In december, the
+              best ranked players are invited to the <a href="all-star.html">GRS All-Star event</a> where they compete
+              against each other for a prestigious title.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Header-->
+    <!-------------------------------------------------------------------------------------------->
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text with Centered Image and Table-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="ranking">Last update - 01/01/2024</h2>
+            <hr>
+            <p class="text">
+              Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica,
+              sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e
+              li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar
+              custosi traductores. At solmen va esser.
+            </p>
+            <div class="custom-table-container center add-top-margin-small">
+              <table id="ranking-table" class="custom-table">
+                <thead>
+                  <tr id="ranking-header" class="bg-color-gray">
+                    <th>Rank</th>
+                    <th class="text-center">Nickname</th>
+                    <th class="text-center">Country</th>
+                    <th class="text-center">Team</th>
+                    <th class="text-center">Points</th>
+                  </tr>
+                </thead>
+                <tbody id="ranking-body">
+                </tbody>
+              </table>
+              <div class="flex-row-space-between">
+                <button id="previous">Previous Page</button>
+                <button id="next">Next Page</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End Text with Centered Image and Table-->
+        <!-------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+    <div class="banner">
+      <div class="banner-table flex-column">
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 class="add-top-margin-small">GRS Ranking calculation and rules</h2>
+            <p class="text">
+              Discover how the Global Racing Series Ranking is calculated. You'll find more details about the
+              formats, the point repartition and the calculation system for the GRS Ranking.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-table flex-column">
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text around Image-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="overview">Overview</h2>
+            <hr>
+            <p class="text">
+              <a href="https://github.com/yenchiah/project-website-template" target="_blank" >
+                <img class="image image-wrap-text max-width-400" src="img/dummay-img.png">
+              </a>
+              The Global Racing Series Ranking takes into account the last 365 days of competition. It is updated
+              every 1st and 15th of each month.
+              <br><br>
+              The only exception being if an <a href="elite-series.html">Elite Series</a> event takes place on the
+              same day. In that case, the ranking will be updated on the first day after the end of the event.
+              <br><br>
+              The events are split into 3 series:
+              <br>
+              - The <a href="elite-series.html">Elite Series</a> gathering the bigger offline events and the best
+              players in high stakes tournaments.
+              <br>
+              - The <a href="ascend-series.html">Ascend Series</a> where the future talents can express themselves
+              and try to challenge the best players in smaller offline events or in the bigger online tournaments.
+              <br>
+              - The <a href="entry-series.html">Entry Series</a> for the new players that want to discover the Global
+              Racing Series events and begin their journey to the top of the GMS Ranking.
+            </p>
+          </div>
+        </div>
+        <!--End Text around Image-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text with Centered Image and Table-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="elite-series">Elite Series</h2>
+            <hr>
+            <p class="text">
+              The <a href="elite-series.html">Elite Series</a> events represent the best level. Those are the biggest
+              events of the year with players that made the history of Trackmania. Every Elite Series event is played
+              offline in prestigious venues such as Gamer's Assembly or DreamHack. They are the main events to focus
+              on if you want to qualify to the <a href="all-star.html">GRS All-Star event</a>.
+              <br><br>
+              The point repartition for Elite Series events is the following :
+            </p>
+            <div class="custom-table-container center add-top-margin-small">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th class="text-center">1st</th>
+                    <th class="text-center">2nd</th>
+                    <th class="text-center">3rd</th>
+                    <th class="text-center">4th</th>
+                    <th class="text-center">5th</th>
+                    <th class="text-center">6th</th>
+                    <th class="text-center">7th</th>
+                    <th class="text-center">8th</th>
+                    <th class="text-center">9th</th>
+                    <th class="text-center">10th</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Points</td>
+                    <td class="text-center">2500</td>
+                    <td class="text-center">1900</td>
+                    <td class="text-center">1400</td>
+                    <td class="text-center">1000</td>
+                    <td class="text-center">800</td>
+                    <td class="text-center">700</td>
+                    <td class="text-center">600</td>
+                    <td class="text-center">500</td>
+                    <td class="text-center">450</td>
+                    <td class="text-center">400</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th class="text-center">11st</th>
+                    <th class="text-center">12nd</th>
+                    <th class="text-center">13rd</th>
+                    <th class="text-center">14th</th>
+                    <th class="text-center">15th</th>
+                    <th class="text-center">16th</th>
+                    <th class="text-center">17-32</th>
+                    <th class="text-center">33-64</th>
+                    <th class="text-center">65-last</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Points</td>
+                    <td class="text-center">350</td>
+                    <td class="text-center">300</td>
+                    <td class="text-center">275</td>
+                    <td class="text-center">250</td>
+                    <td class="text-center">225</td>
+                    <td class="text-center">200</td>
+                    <td class="text-center">175</td>
+                    <td class="text-center">150</td>
+                    <td class="text-center">125</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--End Text with Centered Image and Table-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text with Centered Image and Table-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="ascend-series">Ascend Series</h2>
+            <hr>
+            <p class="text">
+              The <a href="ascend-series.html">Ascend Series</a> is the perfect place for future talents. There are
+              more accessible offline events as well as big online events. This mix allows the players to compete
+              for the win but also to challenge the best players in the world.
+              <br><br>
+              The point repartition for Ascend Series events is the following :
+            </p>
+            <div class="custom-table-container center add-top-margin-small">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th class="text-center">1st</th>
+                    <th class="text-center">2nd</th>
+                    <th class="text-center">3rd</th>
+                    <th class="text-center">4th</th>
+                    <th class="text-center">5th</th>
+                    <th class="text-center">6th</th>
+                    <th class="text-center">7th</th>
+                    <th class="text-center">8th</th>
+                    <th class="text-center">9th</th>
+                    <th class="text-center">10th</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Points</td>
+                    <td class="text-center">1000</td>
+                    <td class="text-center">800</td>
+                    <td class="text-center">650</td>
+                    <td class="text-center">550</td>
+                    <td class="text-center">450</td>
+                    <td class="text-center">400</td>
+                    <td class="text-center">350</td>
+                    <td class="text-center">300</td>
+                    <td class="text-center">250</td>
+                    <td class="text-center">200</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th class="text-center">11st</th>
+                    <th class="text-center">12nd</th>
+                    <th class="text-center">13rd</th>
+                    <th class="text-center">14th</th>
+                    <th class="text-center">15th</th>
+                    <th class="text-center">16th</th>
+                    <th class="text-center">17-32</th>
+                    <th class="text-center">33-64</th>
+                    <th class="text-center">65-last</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Points</td>
+                    <td class="text-center">150</td>
+                    <td class="text-center">125</td>
+                    <td class="text-center">100</td>
+                    <td class="text-center">75</td>
+                    <td class="text-center">50</td>
+                    <td class="text-center">25</td>
+                    <td class="text-center">15</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--End Text with Centered Image and Table-->
+        <!-------------------------------------------------------------------------------------------->
+        <!--Start Text with Centered Image and Table-->
+        <div class="flex-row">
+          <div class="flex-item flex-column">
+            <h2 id="entry-series">Entry Series</h2>
+            <hr>
+            <p class="text">
+              The <a href="entry-series.html">Entry Series</a> is built for the new players that want to discover the
+              competitive scene. Those online events are the best way to meet new people while exploring the Global
+              Racing Series.
+              <br><br>
+              The point repartition for Entry Series events is the following :
+            </p>
+            <div class="custom-table-container center add-top-margin-small">
+              <table class="custom-table">
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th class="text-center">1st</th>
+                    <th class="text-center">2nd</th>
+                    <th class="text-center">3rd</th>
+                    <th class="text-center">4th</th>
+                    <th class="text-center">5th</th>
+                    <th class="text-center">6th</th>
+                    <th class="text-center">7th</th>
+                    <th class="text-center">8th</th>
+                    <th class="text-center">9th</th>
+                    <th class="text-center">10th</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Points</td>
+                    <td class="text-center">250</td>
+                    <td class="text-center">210</td>
+                    <td class="text-center">180</td>
+                    <td class="text-center">150</td>
+                    <td class="text-center">125</td>
+                    <td class="text-center">100</td>
+                    <td class="text-center">75</td>
+                    <td class="text-center">50</td>
+                    <td class="text-center">35</td>
+                    <td class="text-center">25</td>
+                  </tr>
+                </tbody>
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th class="text-center">11st</th>
+                    <th class="text-center">12nd</th>
+                    <th class="text-center">13rd</th>
+                    <th class="text-center">14th</th>
+                    <th class="text-center">15th</th>
+                    <th class="text-center">16th</th>
+                    <th class="text-center">17-32</th>
+                    <th class="text-center">33-64</th>
+                    <th class="text-center">65-last</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Points</td>
+                    <td class="text-center">20</td>
+                    <td class="text-center">15</td>
+                    <td class="text-center">10</td>
+                    <td class="text-center">7</td>
+                    <td class="text-center">5</td>
+                    <td class="text-center">4</td>
+                    <td class="text-center">3</td>
+                    <td class="text-center">2</td>
+                    <td class="text-center">1</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--End Text with Centered Image and Table-->
+        <!-------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+    <div class="footer-container"></div>
+  </div>
+</body>
+
+</html>

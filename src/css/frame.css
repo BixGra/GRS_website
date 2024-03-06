@@ -775,7 +775,7 @@ ol.nested>li:before {
   color: black;
   text-decoration: none;
   padding: 15px;
-  cursor: default;
+  /*cursor: default;*/
 }
 
 .gallery>a.flex-column>img,
@@ -932,7 +932,7 @@ ol.nested>li:before {
 }
 
 .custom-table {
-  display: block;
+  /*display: block;*/
   overflow-x: auto;
   border-left: 1px solid #666666;
   border-bottom: 1px solid #666666;
@@ -942,6 +942,7 @@ ol.nested>li:before {
   empty-cells: show;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .custom-table thead {

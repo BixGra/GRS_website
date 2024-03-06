@@ -32,3 +32,19 @@
   display: none;
   color: #007bff;
 }
+
+/*#ranking-table {
+  width: 500px;
+}*/
+
+
+#ranking-rank,
+#ranking-country,
+#ranking-points {
+  width: 40px;
+}
+
+#ranking-name,
+#ranking-team {
+  width: 150px;
+}

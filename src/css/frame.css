@@ -339,6 +339,7 @@ hr {
   align-items: stretch;
   align-content: stretch;
   box-sizing: border-box;
+  width: 100%;
 }
 
 .flex-row-space-between {

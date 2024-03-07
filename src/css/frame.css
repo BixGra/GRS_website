@@ -339,7 +339,6 @@ hr {
   align-items: stretch;
   align-content: stretch;
   box-sizing: border-box;
-  width: 100%;
 }
 
 .flex-row-space-between {
@@ -785,11 +784,10 @@ ol.nested>li:before {
 .gallery>div.flex-column>video {
   border-radius: 2px;
   width: 100%;
-  background-image: url(../img/loading.gif);
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: center;
-  min-height: 50px;
+  height: 135px;
 }
 
 .gallery>a.flex-column>div,
@@ -944,7 +942,6 @@ ol.nested>li:before {
   margin: 0;
   padding: 0;
   width: 100%;
-  word-wrap: break-word;
 }
 
 .custom-table thead {

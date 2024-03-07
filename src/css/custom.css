@@ -70,3 +70,18 @@
 .full-width {
   width: 100%;
 }
+
+.partner {
+  align-items: center;
+  height: 100%;
+}
+
+.partner>a {
+  height: 135px;
+}
+
+.partner>a>img {
+  max-height: 135px;
+  max-width: 215px;
+  margin: auto;
+}

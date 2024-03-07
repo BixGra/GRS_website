@@ -351,6 +351,16 @@ hr {
   box-sizing: border-box;
 }
 
+.flex-row-space-around {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;

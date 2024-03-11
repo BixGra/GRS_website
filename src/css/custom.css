@@ -61,10 +61,19 @@
   width: 150px;
 }
 
+#calendar-date,
+#calendar-location,
+#calendar-name,
+#calendar-series {
+  width: 150px;
+}
+
 .custom-table tr.ranking-row,
 .custom-table tr.tournament-row,
-.custom-table tr.result-row {
+.custom-table tr.result-row,
+.custom-table tr.calendar-row {
   background-color: #efefef;
+  border: white 2px solid;
 }
 
 .full-width {
@@ -96,6 +105,10 @@
 
 .orange {
   color: orange;
+}
+
+#footer-banner {
+  max-height: 150px;
 }
 
 #footer-bottom {

@@ -275,7 +275,7 @@ hr {
 .content ul a,
 .content ol a {
   text-decoration: none;
-  color: #005cbf;
+  color: #3ebbbf;
 }
 
 .content p a:hover,
@@ -952,7 +952,7 @@ ol.nested>li:before {
 }
 
 .custom-table thead {
-  text-align: left;
+  text-align: center;
   color:white;
 }
 
@@ -964,7 +964,7 @@ ol.nested>li:before {
 }
 
 .custom-table tr.bg-color-light-gray {
-  background-color: white;
+  background-color: #efefef;
 }
 
 .custom-table td,

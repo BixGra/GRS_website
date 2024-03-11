@@ -77,15 +77,58 @@
 }
 
 .partner>a {
-  height: 135px;
+  height: 75px;
 }
 
 .partner>a>img {
-  max-height: 135px;
-  max-width: 215px;
+  max-height: 75px;
+  max-width: 105px;
   margin: auto;
 }
 
 #menu-logo {
   max-height: 50px;
+}
+
+.green {
+  color: green;
+}
+
+.orange {
+  color: orange;
+}
+
+#footer-bottom {
+  max-width: 1500px;
+}
+
+#footer-left,
+#footer-right {
+  width: 25%;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.table-button {
+  padding:10px;
+}
+
+.table-button>button {
+  background-color: white;
+  border: 0;
+}
+
+.table-button>button>img {
+  height: 20px;
+  width: 20px;
+}
+
+.table-button>button:hover {
+  cursor: pointer;
 }

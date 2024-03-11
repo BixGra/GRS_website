@@ -236,7 +236,7 @@
     var $gallery = $("#gallery");
     for (var i = 0; i < 8; i++) {
       var item = '<a href="javascript:void(0)" class="flex-column">' +
-        '<img src="img/dummay-img.png">' +
+        '<img src="img/Statement_Example.png">' +
         '<div>Image Caption</div>' +
         '</a>';
       $gallery.append($(item));

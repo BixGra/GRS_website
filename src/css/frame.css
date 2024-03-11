@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
   left: 0;
   right: 0;
   width: auto;
@@ -52,7 +52,7 @@ h1 {
   margin: 30px 0 0 0;
   padding: 0;
   font-weight: bold;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -61,7 +61,7 @@ h2 {
   margin: 30px 0 0 0;
   padding: 0;
   font-weight: bold;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
 }
 
 h3 {
@@ -70,7 +70,7 @@ h3 {
   margin: 10px 0 0 0;
   padding: 0;
   font-weight: bold;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
 }
 
 ul,
@@ -94,7 +94,7 @@ hr {
   z-index: 2;
   position: relative;
   width: 100%;
-  background-color: #333333;
+  background-color: #171a21;
   min-width: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -173,7 +173,7 @@ hr {
   transition: opacity 0.1s ease-in-out;
   -moz-transition: opacity 0.1s ease-in-out;
   -webkit-transition: opacity 0.1s ease-in-out;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -220,7 +220,7 @@ hr {
 .menu .menu-items .dropdown .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #171a21;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -231,7 +231,7 @@ hr {
 }
 
 .menu .menu-items .dropdown .dropdown-content a {
-  color: black;
+  color: white;
   padding: 10px 20px;
   text-decoration: none;
   display: block;
@@ -297,7 +297,7 @@ hr {
   font-weight: 300;
   line-height: 1.5;
   overflow-x: auto;
-  background-color: #005cbf;
+  background-color: #171a21;
   display: flex;
 }
 
@@ -309,7 +309,7 @@ hr {
 }
 
 .banner .banner-table a {
-  color: #a3cfff;
+  color: #53faff;
   text-decoration: none;
 }
 
@@ -943,9 +943,6 @@ ol.nested>li:before {
 .custom-table {
   /*display: block;*/
   overflow-x: auto;
-  border-left: 1px solid #666666;
-  border-bottom: 1px solid #666666;
-  border-right: 1px solid #666666;
   border-collapse: collapse;
   border-spacing: 0;
   empty-cells: show;
@@ -956,20 +953,18 @@ ol.nested>li:before {
 
 .custom-table thead {
   text-align: left;
-  border-bottom: 1px solid #666666;
-  border-top: 1px solid #666666;
+  color:white;
 }
 
 .custom-table tfoot {
-  border-top: 1px solid #666666;
 }
 
 .custom-table tr.bg-color-gray {
-  background-color: #dadada;
+  background-color: #17a2b8;
 }
 
 .custom-table tr.bg-color-light-gray {
-  background-color: #efefef;
+  background-color: white;
 }
 
 .custom-table td,

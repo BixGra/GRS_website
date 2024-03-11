@@ -43,7 +43,7 @@ function pageTableRanking() {
 }
 
 async function getRanking() {
-    const response = await fetch('http://grseries.com/grsapi/get-ranking-html', {
+    const response = await fetch('http://grseries.com/api/get-ranking-html', {
         method: 'POST',
         body: JSON.stringify({
             size: ""
@@ -100,7 +100,7 @@ function pageTableTournaments() {
 }
 
 async function getTournaments() {
-    const response = await fetch('http://grseries.com/grsapi/get-tournaments-html', {
+    const response = await fetch('http://grseries.com/api/get-tournaments-html', {
         method: 'POST',
         body: JSON.stringify({
             size: ""
@@ -157,14 +157,14 @@ function pageTableResults() {
 }
 
 async function getResults(tournament_id=-1) {
-    const response = await fetch('http://grseries.com/grsapi/get-results-html', {
+    const response = await fetch('http://grseries.com/api/get-results-html', {
         method: 'POST',
         body: JSON.stringify({
             tournament_id: tournament_id
         }),
     })
     const tournaments = await response.text()
-    const response_ = await fetch('http://grseries.com/grsapi/get-tournament-name-html', {
+    const response_ = await fetch('http://grseries.com/api/get-tournament-name-html', {
         method: 'POST',
         body: JSON.stringify({
             tournament_id: tournament_id

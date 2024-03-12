@@ -76,6 +76,16 @@
   border: white 2px solid;
 }
 
+.custom-table tr.tournament-row>td>a {
+  color:black;
+  text-decoration: none;
+}
+
+.custom-table tr.tournament-row>td>a:hover {
+  color:black;
+  text-decoration: underline;
+}
+
 .full-width {
   width: 100%;
 }
@@ -87,6 +97,10 @@
 
 .partner>a {
   height: 75px;
+}
+
+.partner>p {
+  text-align: center;
 }
 
 .partner>a>img {
@@ -114,8 +128,8 @@
   max-width: 1500px;
 }
 
-#footer-left,
-#footer-right {
+#footer-logo {
+  max-height: 50px;
 }
 
 .text-left {

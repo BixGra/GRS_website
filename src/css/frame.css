@@ -941,7 +941,7 @@ ol.nested>li:before {
 }
 
 .custom-table {
-  /*display: block;*/
+  display: block;
   overflow-x: auto;
   border-collapse: collapse;
   border-spacing: 0;

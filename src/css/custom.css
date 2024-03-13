@@ -133,6 +133,10 @@
   max-height: 50px;
 }
 
+.footer-text {
+  min-width: 250px;
+}
+
 .text-left {
   text-align: left;
 }

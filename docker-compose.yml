@@ -1,0 +1,14 @@
+version: "3.1"
+
+services:
+  grswebsitehost:
+    image: grswebsitehost:latest
+    container_name: grswebsitehost
+    ports:
+      - "81:80"
+    networks:
+      - sandbixproxy_mynet
+
+networks:
+  sandbixproxy_mynet:
+    external: true

@@ -2,8 +2,8 @@ version: "3.1"
 
 services:
   grswebsitehost:
-    image: grswebsitehost:latest
-    container_name: grswebsitehost
+    image: grs:latest
+    container_name: grs
     networks:
       - sandbixproxy_mynet
 

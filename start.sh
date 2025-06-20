@@ -1,6 +1,6 @@
-echo "docker build . -t grswebsitehost"
+echo "docker build . -t grs"
 
-docker build . -t grswebsitehost
+docker build . -t grs
 
 echo "docker compose up -d --remove-orphans"
 

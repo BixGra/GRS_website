@@ -1,7 +1,7 @@
 version: "3.1"
 
 services:
-  grswebsitehost:
+  grs:
     image: grs:latest
     container_name: grs
     networks:
